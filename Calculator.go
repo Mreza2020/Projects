@@ -50,4 +50,4 @@ func division(x, y int) {
 }
 func remaining(x, y int) {
 	f = x % y
-}
+}//heloo
