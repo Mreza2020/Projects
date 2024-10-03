@@ -2,28 +2,28 @@ package main
 
 import "fmt"
 
-var a int // Fibonacci input
+var aa int // Fibonacci input
 
 func main() {
 	fmt.Println("How many Fibonacci numbers does it represent?")
-	fmt.Scan(&a)
-	fmt.Printf("We calculate up to this %d Fibonacci number:\n", Fibonacci1(a))
+	fmt.Scan(&aa)
+	fmt.Printf("We calculate up to this %d Fibonacci number:\n", Fibonacci1(aa))
 	correction()
 
 }
 
-func Fibonacci1(a int) int { //Fibonacci calculator function
-	if a <= 1 {
-		return a
+func Fibonacci1(aa int) int { //Fibonacci calculator function
+	if aa <= 1 {
+		return aa
 	}
-	return Fibonacci1(a-1) + Fibonacci1(a-2)
+	return Fibonacci1(aa-1) + Fibonacci1(aa-2)
 }
 func correction() { //Fibonacci counter function
 	//c := Fibonacci1(a)
-	for i := 0; i < a; {
+	for i := 0; i < aa; {
 		i += 1
 		print(Fibonacci1(i))
-		if i == a {
+		if i == aa {
 			print(" ... ")
 		} else {
 			print(" , ")
