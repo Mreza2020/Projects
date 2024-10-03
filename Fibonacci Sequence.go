@@ -7,7 +7,7 @@ var a int // Fibonacci input
 func main() {
 	fmt.Println("How many Fibonacci numbers do you want?\t")
 	fmt.Scan(&a)
-	println(Fibonacci(a))
+	println(Fibonacci(a)) //print Fibonacci
 
 }
 
