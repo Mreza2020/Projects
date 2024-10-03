@@ -22,6 +22,8 @@ func Tribonacci(n int) int {
 }
 
 func main() {
-	n := 5 // Example: Get the 10th Tribonacci number
+	var n int // Example: Get the ...th Tribonacci number
+	fmt.Println("How many Tribonacci numbers does it represent?")
+	fmt.Scan(&n)
 	fmt.Printf("The %d-th Tribonacci number is: %d\n", n, Tribonacci(n))
 }
