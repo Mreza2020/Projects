@@ -7,18 +7,30 @@ import (
 
 func main() {
 	start := time.Now() //Time start
-	println(h(5000))
+	fmt.Println(h1(49))
 	elapsed := time.Since(start) //Time end
 	fmt.Println(elapsed)
+
 }
 
-func h(d int) int {
+func h1(g int) int {
+	if 0 == g%2 {
+		println("type: yes")
+		for i := 0; i < g; i++ {
+			print(i)
+			print(",")
 
-	f := 0
-	for i := 0; i < d; i++ {
-		f += 5
-
+		}
 	}
-	return f
 
+	if 1 == g%2 {
+		println("type: no")
+		for i := 0; i < g; i++ {
+			print(i)
+			print(",")
+
+		}
+	}
+	println("\nnumber:")
+	return g
 }
